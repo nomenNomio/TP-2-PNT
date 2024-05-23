@@ -57,7 +57,7 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script type="module">
 
-        console.log("Los filtros funcionan como se pide, solo que con el dni de mas de 4 letras es dificil verlo"),
+        console.log("Los filtros funcionan como se pide, solo que con el dni de mas de 4 letras es dificil verlo");
 
         // funciones puras
         function incluidoEnNombre(match){
@@ -143,6 +143,7 @@
                         (persona) => monoideAndReiteradoPersonaABool(filtrosPersonaABool)(persona)
                     );
 
+
                 }
 
             },
@@ -158,7 +159,6 @@
                     this.filtroDni.alert = aparecerAlert(event.target.value);
                     this.filtroDni.valor = event.target.value;
                 }
-
             }
         }).mount('#app')
     </script>    
